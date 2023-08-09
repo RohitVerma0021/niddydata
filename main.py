@@ -114,11 +114,14 @@ def main():
                 st.write("## now it show time")
 
     elif page == "Projects":
-        st.header("Projects")
-        st.write("Check out some of my projects:")
-        st.write("- Project 1")
-        st.write("- Project 2")
-        st.write("- Project 3")
+        p1,p2=st.columns(2)
+        with p1:
+            st.markdown("[](https://ipl-win-probability-predictor-niddydata0021.streamlit.app/?embed_options=dark_theme)")
+            st.header("Projects")
+            st.write("Check out some of my projects:")
+            st.write("- Project 1")
+            st.write("- Project 2")
+            st.write("- Project 3")
         # Add more projects as needed
 
 
